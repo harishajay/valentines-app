@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BE MY VALENTINE </title>
+ <style>
+        
+        html,body {
+
+            margin: 0;
+            padding: 0;
+            background-attachment: fixed;
+            background-image: url('./rose.avif'); /* Path to your image */
+            background-size: cover; /* Cover the entire screen */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            height: 100vh; /* Full height */
+            overflow: hidden; /* Prevents scrolling */
+
+        }
+
+       .button_2 {
+
+            align-items: center;
+            appearance: none;
+            background-color: #fff;
+            border-radius: 24px;
+            border-style: none;
+            box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+            box-sizing: border-box;
+            color: #3c4043;
+            cursor: pointer;
+            display: inline-flex;
+            fill: currentcolor;
+            font-family: "Google Sans", Roboto, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            height: 48px;
+            justify-content: center;
+            letter-spacing: .25px;
+            line-height: normal;
+            max-width: 100%;
+            overflow: visible;
+            padding: 2px 20px;
+            position: absolute;
+            left: 56%;
+            top: 51%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            text-transform: none;
+            transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: auto;
+            will-change: transform, opacity;
+            z-index: 0;
+        }
+
+        .button_2:hover {
+            background: #F6F9FE;
+            color: #174ea6;
+        }
+
+        .button_2:active {
+            box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+            outline: none;
+        }
+
+        .button_2:focus {
+            outline: none;
+            border: 2px solid #4285f4;
+        }
+
+        .button_2:not(:disabled) {
+            box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(28, 29, 29, 0.15) 0 4px 8px 3px;
+        }
+
+        .button_2:not(:disabled):hover {
+            box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15)
+
+                }
+
+        h1 {
+            padding: 10px;
+            text-align: center;
+            font-family: 'Great Vibes', cursive;
+        }
+
+        .div_container{
+            position: relative;
+            font-family:'Great Vibes',cursive;
+            display: flex;
+            flex-direction: row;
+            font-size: large;
+            justify-content: center;
+            text-align: center;
+            left: -100px;
+            top: 180px;
+           
+        }
+            
+        .tense{
+            
+            padding: 15px;
+            margin-top: 30px;
+            
+        }
+        
+        .button_1 {
+        align-items: center;
+        appearance: none;
+        background-color: #fff;
+        border-radius: 24px;
+        border-style: none;
+        box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+        box-sizing: border-box;
+        color: #3c4043;
+        cursor: pointer;
+        display: inline-flex;
+        fill: currentcolor;
+        font-family: "Google Sans",Roboto,Arial,sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        height: 48px;
+        justify-content: center;
+        letter-spacing: .25px;
+        line-height: normal;
+        max-width: 100%;
+        overflow: visible;
+        padding: 2px 24px;
+        position: relative;
+        text-align: center;
+        text-transform: none;
+        transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: auto;
+        will-change: transform,opacity;
+        z-index: 0;
+        }
+
+        .button_1:hover {
+        background: #F6F9FE;
+        color: #174ea6;
+        }
+
+        .button_1:active {
+        box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+        outline: none;
+        }
+
+        .button_1:focus {
+        outline: none;
+        border: 2px solid #4285f4;
+        }
+
+        .button_1:not(:disabled) {
+        box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+        }
+
+        .button_1:not(:disabled):hover {
+        box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+        }
+
+        .button_1:not(:disabled):focus {
+        box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+        }
+
+        .button_1:not(:disabled):active {
+        box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+        }
+
+        .button_1:disabled {
+        box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+        }
+
+      .love_line{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        padding: 10%;
+        color: #F6F9FE;
+      }
+
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="tense">
+        <h1 id="hide" style="color: rgb(82, 46, 173);"> Will you be my Valentine !! </h1>
+    </div>
+
+    <div class="div_container">
+        <button id="button1_id" onclick="change()" class="button_1" role="button"  >Yes</button>
+    </div>
+   
+   <div class="div_container_2">
+       <button id="mouseover_button" class="button_2" role="button">I don't know</button>
+   </div>
+    
+   <div class="love_line">
+    <p id="para" style="display: none;"> I know you will say yes 😂 
+
+        
+     </p>
+   </div>
+
+    <script>
+
+        function change(){
+
+            document.getElementById('para').style.display = 'inline-block';
+            document.getElementById('hide').style.display = 'none';
+            document.getElementById('button1_id').style.display = 'none';
+            document.getElementById('mouseover_button').style.display = 'none';
+
+          
+
+            document.body.style.backgroundImage = "url('img.avif')";
+            
+        }
+
+        // Function to move the "No" button randomly
+
+            function moveButton() {
+
+                 let button = document.getElementById('mouseover_button');
+
+                let maxX = window.innerWidth - button.offsetWidth;
+                let maxY = window.innerHeight - button.offsetHeight;
+
+                let x = Math.random() * maxX;
+                let y = Math.random() * maxY;
+
+                button.style.left = `${x}px`;
+                button.style.top = `${y}px`;
+}
+   
+        // Attach the function to the mouseover event
+        document.getElementById('mouseover_button').addEventListener('mouseover', moveButton);
+
+    </script>
+</body> 
+</html>   
+
+
